@@ -1,0 +1,438 @@
+{
+  "history": [
+    {
+      "user_input": "I feel overwhelmed. I need to prepare for my exams, update my resume for job applications, go to the gym regularly, clean my room, and also manage my time better. Please help me break this into clear tasks.",
+      "generated_tasks": "{\"error\": {\"code\": 404, \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.\", \"status\": \"NOT_FOUND\"}}"
+    },
+    {
+      "user_input": "I feel overwhelmed. I need to prepare for my exams, update my resume for job applications, go to the gym regularly, clean my room, and also manage my time better. Please help me break this into clear tasks.",
+      "generated_tasks": "{\"error\": {\"code\": 404, \"message\": \"models/gemini-1.5-flash-latest is not found for API version v1, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.\", \"status\": \"NOT_FOUND\"}}"
+    },
+    {
+      "user_input": "I feel overwhelmed. I need to prepare for my exams, update my resume for job applications, go to the gym regularly, clean my room, and also manage my time better. Please help me break this into clear tasks.",
+      "generated_tasks": "{\"error\": {\"code\": 404, \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.\", \"status\": \"NOT_FOUND\"}}"
+    },
+    {
+      "user_input": "I feel overwhelmed. I need to prepare for my exams, update my resume for job applications, go to the gym regularly, clean my room, and also manage my time better. Please help me break this into clear tasks.",
+      "generated_tasks": "{\"error\": {\"code\": 404, \"message\": \"models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.\", \"status\": \"NOT_FOUND\"}}"
+    },
+    {
+      "user_input": "I feel overwhelmed. I need to study, update my resume, go to the gym, and clean my room.",
+      "output": {
+        "mode": "demo-agent",
+        "input": "I feel overwhelmed. I need to study, update my resume, go to the gym, and clean my room.",
+        "tasks": [
+          {
+            "task": "Prepare exam study plan",
+            "category": "Education",
+            "priority": "HIGH",
+            "time_estimate": "2 hours/day",
+            "execution_tip": "Split subjects into daily blocks and use Pomodoro"
+          },
+          {
+            "task": "Update resume",
+            "category": "Career",
+            "priority": "HIGH",
+            "time_estimate": "1\u20132 hours",
+            "execution_tip": "Highlight recent projects and measurable achievements"
+          },
+          {
+            "task": "Go to the gym",
+            "category": "Health",
+            "priority": "MEDIUM",
+            "time_estimate": "1 hour",
+            "execution_tip": "Fix workout days to build consistency"
+          },
+          {
+            "task": "Clean room",
+            "category": "Personal",
+            "priority": "LOW",
+            "time_estimate": "30 minutes",
+            "execution_tip": "Start with desk and bed"
+          }
+        ],
+        "daily_plan": "Study in the morning, update resume midday, gym in the evening, clean room before sleep."
+      }
+    },
+    {
+      "user_input": "",
+      "output": {
+        "mode": "demo-agent",
+        "input": "",
+        "tasks": [
+          {
+            "task": "Prepare exam study plan",
+            "category": "Education",
+            "priority": "HIGH",
+            "time_estimate": "2 hours/day",
+            "execution_tip": "Split subjects into daily blocks and use Pomodoro"
+          },
+          {
+            "task": "Update resume",
+            "category": "Career",
+            "priority": "HIGH",
+            "time_estimate": "1\u20132 hours",
+            "execution_tip": "Highlight recent projects and achievements"
+          },
+          {
+            "task": "Go to the gym",
+            "category": "Health",
+            "priority": "MEDIUM",
+            "time_estimate": "1 hour",
+            "execution_tip": "Fix workout days to build consistency"
+          },
+          {
+            "task": "Clean room",
+            "category": "Personal",
+            "priority": "LOW",
+            "time_estimate": "30 minutes",
+            "execution_tip": "Start with desk and bed"
+          }
+        ],
+        "daily_plan": "Study in the morning, resume midday, gym evening, clean before sleep."
+      }
+    },
+    {
+      "user_input": "",
+      "output": {
+        "mode": "demo-agent",
+        "input": "",
+        "tasks": [
+          {
+            "task": "Prepare exam study plan",
+            "category": "Education",
+            "priority": "HIGH",
+            "time_estimate": "2 hours/day",
+            "execution_tip": "Split subjects into daily blocks and use Pomodoro"
+          },
+          {
+            "task": "Update resume",
+            "category": "Career",
+            "priority": "HIGH",
+            "time_estimate": "1\u20132 hours",
+            "execution_tip": "Highlight recent projects and achievements"
+          },
+          {
+            "task": "Go to the gym",
+            "category": "Health",
+            "priority": "MEDIUM",
+            "time_estimate": "1 hour",
+            "execution_tip": "Fix workout days to build consistency"
+          },
+          {
+            "task": "Clean room",
+            "category": "Personal",
+            "priority": "LOW",
+            "time_estimate": "30 minutes",
+            "execution_tip": "Start with desk and bed"
+          }
+        ],
+        "daily_plan": "Study in the morning, resume midday, gym evening, clean before sleep."
+      }
+    },
+    {
+      "user_input": "",
+      "output": {
+        "mode": "demo-agent",
+        "input": "",
+        "tasks": [
+          {
+            "task": "Prepare exam study plan",
+            "category": "Education",
+            "priority": "HIGH",
+            "time_estimate": "2 hours/day",
+            "execution_tip": "Split subjects into daily blocks and use Pomodoro"
+          },
+          {
+            "task": "Update resume",
+            "category": "Career",
+            "priority": "HIGH",
+            "time_estimate": "1\u20132 hours",
+            "execution_tip": "Highlight recent projects and achievements"
+          },
+          {
+            "task": "Go to the gym",
+            "category": "Health",
+            "priority": "MEDIUM",
+            "time_estimate": "1 hour",
+            "execution_tip": "Fix workout days to build consistency"
+          },
+          {
+            "task": "Clean room",
+            "category": "Personal",
+            "priority": "LOW",
+            "time_estimate": "30 minutes",
+            "execution_tip": "Start with desk and bed"
+          }
+        ],
+        "daily_plan": "Study in the morning, resume midday, gym evening, clean before sleep."
+      }
+    },
+    {
+      "user_input": "",
+      "output": {
+        "mode": "demo-agent",
+        "input": "",
+        "tasks": [
+          {
+            "task": "Prepare exam study plan",
+            "category": "Education",
+            "priority": "HIGH",
+            "time_estimate": "2 hours/day",
+            "execution_tip": "Split subjects into daily blocks and use Pomodoro"
+          },
+          {
+            "task": "Update resume",
+            "category": "Career",
+            "priority": "HIGH",
+            "time_estimate": "1\u20132 hours",
+            "execution_tip": "Highlight recent projects and achievements"
+          },
+          {
+            "task": "Go to the gym",
+            "category": "Health",
+            "priority": "MEDIUM",
+            "time_estimate": "1 hour",
+            "execution_tip": "Fix workout days to build consistency"
+          },
+          {
+            "task": "Clean room",
+            "category": "Personal",
+            "priority": "LOW",
+            "time_estimate": "30 minutes",
+            "execution_tip": "Start with desk and bed"
+          }
+        ],
+        "daily_plan": "Study in the morning, resume midday, gym evening, clean before sleep."
+      }
+    },
+    {
+      "user_input": "",
+      "output": {
+        "mode": "demo-agent",
+        "input": "",
+        "tasks": [
+          {
+            "task": "Prepare exam study plan",
+            "category": "Education",
+            "priority": "HIGH",
+            "time_estimate": "2 hours/day",
+            "execution_tip": "Split subjects into daily blocks and use Pomodoro"
+          },
+          {
+            "task": "Update resume",
+            "category": "Career",
+            "priority": "HIGH",
+            "time_estimate": "1\u20132 hours",
+            "execution_tip": "Highlight recent projects and achievements"
+          },
+          {
+            "task": "Go to the gym",
+            "category": "Health",
+            "priority": "MEDIUM",
+            "time_estimate": "1 hour",
+            "execution_tip": "Fix workout days to build consistency"
+          },
+          {
+            "task": "Clean room",
+            "category": "Personal",
+            "priority": "LOW",
+            "time_estimate": "30 minutes",
+            "execution_tip": "Start with desk and bed"
+          }
+        ],
+        "daily_plan": "Study in the morning, resume midday, gym evening, clean before sleep."
+      }
+    },
+    {
+      "user_input": "",
+      "output": {
+        "mode": "demo-agent",
+        "input": "",
+        "tasks": [
+          {
+            "task": "Prepare exam study plan",
+            "category": "Education",
+            "priority": "HIGH",
+            "time_estimate": "2 hours/day",
+            "execution_tip": "Split subjects into daily blocks and use Pomodoro"
+          },
+          {
+            "task": "Update resume",
+            "category": "Career",
+            "priority": "HIGH",
+            "time_estimate": "1\u20132 hours",
+            "execution_tip": "Highlight recent projects and achievements"
+          },
+          {
+            "task": "Go to the gym",
+            "category": "Health",
+            "priority": "MEDIUM",
+            "time_estimate": "1 hour",
+            "execution_tip": "Fix workout days to build consistency"
+          },
+          {
+            "task": "Clean room",
+            "category": "Personal",
+            "priority": "LOW",
+            "time_estimate": "30 minutes",
+            "execution_tip": "Start with desk and bed"
+          }
+        ],
+        "daily_plan": "Study in the morning, resume midday, gym evening, clean before sleep."
+      }
+    },
+    {
+      "user_input": "",
+      "output": {
+        "mode": "demo-agent",
+        "input": "",
+        "tasks": [
+          {
+            "task": "Prepare exam study plan",
+            "category": "Education",
+            "priority": "HIGH",
+            "time_estimate": "2 hours/day",
+            "execution_tip": "Split subjects into daily blocks and use Pomodoro"
+          },
+          {
+            "task": "Update resume",
+            "category": "Career",
+            "priority": "HIGH",
+            "time_estimate": "1\u20132 hours",
+            "execution_tip": "Highlight recent projects and achievements"
+          },
+          {
+            "task": "Go to the gym",
+            "category": "Health",
+            "priority": "MEDIUM",
+            "time_estimate": "1 hour",
+            "execution_tip": "Fix workout days to build consistency"
+          },
+          {
+            "task": "Clean room",
+            "category": "Personal",
+            "priority": "LOW",
+            "time_estimate": "30 minutes",
+            "execution_tip": "Start with desk and bed"
+          }
+        ],
+        "daily_plan": "Study in the morning, resume midday, gym evening, clean before sleep."
+      }
+    },
+    {
+      "user_input": "",
+      "output": {
+        "mode": "demo-agent",
+        "input": "",
+        "tasks": [
+          {
+            "task": "Prepare exam study plan",
+            "category": "Education",
+            "priority": "HIGH",
+            "time_estimate": "2 hours/day",
+            "execution_tip": "Split subjects into daily blocks and use Pomodoro"
+          },
+          {
+            "task": "Update resume",
+            "category": "Career",
+            "priority": "HIGH",
+            "time_estimate": "1\u20132 hours",
+            "execution_tip": "Highlight recent projects and achievements"
+          },
+          {
+            "task": "Go to the gym",
+            "category": "Health",
+            "priority": "MEDIUM",
+            "time_estimate": "1 hour",
+            "execution_tip": "Fix workout days to build consistency"
+          },
+          {
+            "task": "Clean room",
+            "category": "Personal",
+            "priority": "LOW",
+            "time_estimate": "30 minutes",
+            "execution_tip": "Start with desk and bed"
+          }
+        ],
+        "daily_plan": "Study in the morning, resume midday, gym evening, clean before sleep."
+      }
+    },
+    {
+      "user_input": "",
+      "output": {
+        "mode": "demo-agent",
+        "input": "",
+        "tasks": [
+          {
+            "task": "Prepare exam study plan",
+            "category": "Education",
+            "priority": "HIGH",
+            "time_estimate": "2 hours/day",
+            "execution_tip": "Split subjects into daily blocks and use Pomodoro"
+          },
+          {
+            "task": "Update resume",
+            "category": "Career",
+            "priority": "HIGH",
+            "time_estimate": "1\u20132 hours",
+            "execution_tip": "Highlight recent projects and achievements"
+          },
+          {
+            "task": "Go to the gym",
+            "category": "Health",
+            "priority": "MEDIUM",
+            "time_estimate": "1 hour",
+            "execution_tip": "Fix workout days to build consistency"
+          },
+          {
+            "task": "Clean room",
+            "category": "Personal",
+            "priority": "LOW",
+            "time_estimate": "30 minutes",
+            "execution_tip": "Start with desk and bed"
+          }
+        ],
+        "daily_plan": "Study in the morning, resume midday, gym evening, clean before sleep."
+      }
+    },
+    {
+      "user_input": "",
+      "output": {
+        "mode": "demo-agent",
+        "input": "",
+        "tasks": [
+          {
+            "task": "Prepare exam study plan",
+            "category": "Education",
+            "priority": "HIGH",
+            "time_estimate": "2 hours/day",
+            "execution_tip": "Split subjects into daily blocks and use Pomodoro"
+          },
+          {
+            "task": "Update resume",
+            "category": "Career",
+            "priority": "HIGH",
+            "time_estimate": "1\u20132 hours",
+            "execution_tip": "Highlight recent projects and achievements"
+          },
+          {
+            "task": "Go to the gym",
+            "category": "Health",
+            "priority": "MEDIUM",
+            "time_estimate": "1 hour",
+            "execution_tip": "Fix workout days to build consistency"
+          },
+          {
+            "task": "Clean room",
+            "category": "Personal",
+            "priority": "LOW",
+            "time_estimate": "30 minutes",
+            "execution_tip": "Start with desk and bed"
+          }
+        ],
+        "daily_plan": "Study in the morning, resume midday, gym evening, clean before sleep."
+      }
+    }
+  ]
+}

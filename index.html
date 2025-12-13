@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Thought-to-Task Agent</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        min-height: 100vh;
+        background: radial-gradient(circle at top, #1b2735, #090a0f);
+        color: #fff;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 36px;
+    }
+
+    textarea {
+        width: 100%;
+        height: 120px;
+        padding: 15px;
+        border-radius: 12px;
+        border: none;
+        font-size: 16px;
+        resize: none;
+        outline: none;
+    }
+
+    button {
+        margin-top: 15px;
+        padding: 12px 30px;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        background: linear-gradient(135deg, #00d4ff, #7f5cff);
+        color: #000;
+    }
+
+    button:hover {
+        opacity: 0.9;
+    }
+
+    .task {
+        background: rgba(255,255,255,0.08);
+        border-radius: 14px;
+        padding: 18px;
+        margin-top: 18px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    }
+
+    .task h3 {
+        margin: 0 0 8px 0;
+    }
+
+    .badge {
+        display: inline-block;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .HIGH { background: #ff4d4d; }
+    .MEDIUM { background: #ffb347; color: #000; }
+    .LOW { background: #4caf50; }
+
+    .daily-plan {
+        margin-top: 30px;
+        padding: 20px;
+        border-radius: 16px;
+        background: linear-gradient(135deg, #00d4ff, #7f5cff);
+        color: #000;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    footer {
+        margin-top: 40px;
+        text-align: center;
+        opacity: 0.6;
+        font-size: 14px;
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+
+    <h1>🧠 Thought-to-Task Agent</h1>
+
+    <textarea id="thought" placeholder="Write your messy thought here..."></textarea>
+    <br>
+    <button onclick="runAgent()">Run Agent</button>
+
+    <div id="output"></div>
+
+    <footer>
+        Demo Agent • Fallback Mode • No API required
+    </footer>
+
+</div>
+
+<script>
+async function runAgent() {
+    const thought = document.getElementById("thought").value;
+    const output = document.getElementById("output");
+
+    output.innerHTML = "<p>🧠 Thinking...</p>";
+
+    try {
+        const res = await fetch("/run", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ thought })
+        });
+
+        const data = await res.json();
+
+        output.innerHTML = "";
+
+        data.tasks.forEach(t => {
+            output.innerHTML += `
+                <div class="task">
+                    <h3>${t.task}</h3>
+                    <span class="badge ${t.priority}">${t.priority}</span>
+                    <p><b>Category:</b> ${t.category}</p>
+                    <p><b>Time:</b> ${t.time_estimate}</p>
+                    <p><b>Tip:</b> ${t.execution_tip}</p>
+                </div>
+            `;
+        });
+
+        output.innerHTML += `
+            <div class="daily-plan">
+                🗓 Daily Plan: ${data.daily_plan}
+            </div>
+        `;
+
+    } catch (err) {
+        output.innerHTML = "<p>❌ Error connecting to agent.</p>";
+    }
+}
+</script>
+
+</body>
+</html>
