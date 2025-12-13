@@ -56,3 +56,16 @@ The agent processes this input and produces:
 
 ```bash
 python -m uvicorn src.api:app --reload
+Then open:
+
+UI: http://127.0.0.1:8000/ui
+
+API Docs: http://127.0.0.1:8000/docs
+
+Focus of the Project
+
+Agent-based system design
+
+Clean and readable API structure
+
+Natural language → actionable plan transformation
